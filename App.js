@@ -15,7 +15,7 @@
       setCount(count + 1);
     }
     const handleDecrement = () => {
-      setCount(count - 1);
+      setCount((prev) => Math.max(0, prev - 1));
     }
 
     const passValue = () => {

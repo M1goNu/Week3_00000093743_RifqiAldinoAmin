@@ -16,7 +16,7 @@ const Counter = ({
     return <View>
         <Text>{value}</Text>
         <Button title="Increment" onPress={handleIncrement} />
-        <Button title="Decrement" onPress={handleDecrement} />
+        <Button title="Decrement" onPress={handleDecrement} disabled={value === 0}  />
         <Button title="Pass Value" onPress={passValue} />
     </View>
 }
