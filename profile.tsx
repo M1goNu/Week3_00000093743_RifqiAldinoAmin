@@ -11,7 +11,7 @@ const Profile = ({
     age
 }: iprofile) => {
     return <View>
-        <Text>Halo namaku, {savedName} !</Text>
+        <Text>Halo namaku, {savedName || "anonymous"} !</Text>
         <Text>Umurku, {age} tahun</Text>
     </View>
 };
